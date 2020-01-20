@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/personaldetails"
+    >
+    <fragment android:id="@+id/personaldetails"
+        android:name="com.gespl.bgv.PersonalDetailsFragment"
+        android:label="personal"
+        tools:layout="@layout/fragment_personal_details">
+        <action
+            android:id="@+id/action_personaldetails_to_view_fragment"
+            app:destination="@id/view_fragment" />
+    </fragment>
+    <fragment tools:layout="@layout/fragment_view"
+        android:id="@+id/view_fragment"
+        android:label="view"
+        android:name="com.gespl.bgv.ViewFragment">
+        <action
+            android:id="@+id/action_view_fragment_to_personaldetails"
+            app:destination="@id/personaldetails" />
+        <action
+            android:id="@+id/action_view_fragment_to_image_fragment"
+            app:destination="@id/image_fragment" />
+    </fragment>
+<fragment android:id="@+id/image_fragment"
+    android:label="image"
+    android:name="com.gespl.bgv.ImageFragment"
+    tools:layout="@layout/fragment_image">
+    <action
+        android:id="@+id/action_image_fragment_to_personaldetails"
+        app:destination="@id/personaldetails" />
+</fragment>
+
+</navigation>

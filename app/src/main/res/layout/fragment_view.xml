@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewFragment">
+<TextView
+    android:id="@+id/tv_h"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_49sdp"
+    android:gravity="center"
+    android:textSize="@dimen/_16sdp"
+    android:text=" BGV Details"></TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_below="@+id/tv_h">
+
+    <TextView
+        android:id="@+id/tv_compid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+        android:text="Comp Id :"
+        android:textColor="@color/black"
+        ></TextView>
+
+        <TextView
+            android:id="@+id/tv_compid_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_compid"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_stationcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_compid"
+            android:textSize="@dimen/_14sdp"
+            android:text="Station Code:"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_station_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_stationcode"
+            android:layout_below="@+id/tv_compid_val"
+           ></TextView>
+
+        <TextView
+            android:id="@+id/tv_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_stationcode"
+            android:textSize="@dimen/_14sdp"
+            android:text="Full Name:"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_fullname_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_fullname"
+            android:layout_below="@+id/tv_station_val"
+           ></TextView>
+
+        <TextView
+            android:id="@+id/tv_fathername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_fullname"
+            android:textSize="@dimen/_14sdp"
+            android:text="Father Name:"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_father_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_fathername"
+            android:layout_below="@+id/tv_fullname"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_date_ofbirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_fathername"
+            android:textSize="@dimen/_14sdp"
+            android:text="Date of Birth:"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_dob_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_date_ofbirth"
+            android:layout_below="@+id/tv_fathername"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_date_ofbirth"
+            android:textSize="@dimen/_14sdp"
+            android:text="Address :"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_address_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_date_ofbirth"
+            android:layout_below="@+id/tv_date_ofbirth"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_address_val"
+            android:textSize="@dimen/_14sdp"
+            android:text="Mobile No :"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_mob_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_mobile"
+            android:layout_below="@+id/tv_address_val"
+            ></TextView>
+        <TextView
+            android:id="@+id/tv_dlno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_mobile"
+            android:textSize="@dimen/_14sdp"
+            android:text="Dl No :"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_dl_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_dlno"
+            android:layout_below="@+id/tv_mobile"
+            ></TextView>
+        <TextView
+            android:id="@+id/tv_pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_dlno"
+            android:textSize="@dimen/_14sdp"
+            android:text="PAN No :"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_pan_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_pan"
+            android:layout_below="@+id/tv_dlno"
+            ></TextView>
+        <TextView
+            android:id="@+id/tv_voter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tv_pan"
+            android:textSize="@dimen/_14sdp"
+            android:text="Voter Id :"
+            android:textColor="@color/black"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_voter_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text=""
+            android:layout_toRightOf="@+id/tv_pan_val"
+            android:layout_below="@+id/tv_pan"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@+id/tv_voter"
+            >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="@dimen/_102sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:text="Edit"
+                    android:layout_centerInParent="true"></Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="@dimen/_102sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:text="NEXT"
+                    android:layout_centerInParent="true"></Button>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

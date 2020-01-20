@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageFragment">
+
+
+
+    <TextView
+        android:id="@+id/tvv"
+        android:layout_width="match_parent"
+        android:text=" BGV Details"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:layout_height="@dimen/_49sdp"></TextView>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvv"
+        android:visibility="gone"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_compid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textSize="@dimen/_14sdp"
+        android:text="Name :"
+        android:layout_below="@+id/img"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tv_name_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_below="@+id/img"
+        android:text=""
+        android:layout_toRightOf="@+id/tv_compid"
+        android:layout_marginRight="@dimen/_10sdp"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tv_stationcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/tv_compid"
+        android:textSize="@dimen/_14sdp"
+        android:text="Station Code:"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tv_station_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textSize="@dimen/_14sdp"
+        android:text=""
+        android:layout_toRightOf="@+id/tv_stationcode"
+        android:layout_below="@+id/tv_name_val"
+        android:layout_marginRight="@dimen/_10sdp"
+        ></TextView>
+
+
+    <Button
+        android:id="@+id/take_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/tv_stationcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_49sdp"
+        android:visibility="gone"
+        android:text="Take Image For BGV">
+
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:visibility="visible"
+        android:layout_below="@+id/tv_stationcode"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_new"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:text="New"
+                android:layout_centerInParent="true"></Button>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_send1"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:text="Send"
+                android:layout_centerInParent="true"></Button>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="@dimen/_102sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:text="Exit"
+                android:layout_centerInParent="true"></Button>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
